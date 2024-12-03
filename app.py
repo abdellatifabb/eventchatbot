@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from transformers import pipeline
 from flask_cors import CORS
 app = Flask(__name__)
-CORS(app,origins=["http://localhost:3000/"])
+CORS(app)
 
 # Load data and models
 df = pd.read_excel('events.xlsx')
